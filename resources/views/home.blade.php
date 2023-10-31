@@ -4,33 +4,32 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-9">
-            <!-- <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div> -->
-                
-                <!-- <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div> -->
-            <!-- </div> -->
-            <div class="row home-title">
+            <div class="row home-title font-faustina">
                 <div class="col d-flex align-items-center">
                     <span class="display-4 me-3">{{ Auth::user()->name }}</span>
-                    <i class="fa fa-circle fa-lg me-3" aria-hidden="true"></i>
-                    <span class="display-4">UI/UX</span>
+                    <i class="fa fa-circle fa-lg me-3 text-dark-green" aria-hidden="true"></i>
+                    <span class="display-4 text-dark-green">UI/UX</span>
                 </div>
             </div>
             <div class="row">
                 <div class="col-1">
-                    <div>sections</div>
+                    <span class="font-faustina text-light-green">sections</span>
                 </div>
-                <div class="col-4 d-flex align-items-center">
+                <div class="col-4">
                     <hr>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <div class="row justify-content-center d-grid gap-3 d-md-flex ms-2 me-2">
+                        <button class="btn col bg-success bg-opacity-10 border border-success border-opacity-10 rounded-2">ui/ux showcase</button>
+                        <button class="btn col bg-success bg-opacity-10 border border-success border-opacity-10 rounded-2">design process</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
             </div>
         </div>
     </div>

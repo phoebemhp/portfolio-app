@@ -14,7 +14,7 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@500;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome Icon -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -23,11 +23,11 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md">
+    <div id="app font-poppins">
+        <nav class="navbar navbar-expand-md font-faustina">
             <div class="container">
                 @if (Auth::check())
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand fw-bold text-dark-green" href="{{ url('/') }}">
                         {{ strtolower(Auth::user()->name) }}
                     </a>
 

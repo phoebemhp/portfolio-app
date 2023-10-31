@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css2?family=Faustina:wght@800;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap);
 @charset "UTF-8";
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
@@ -11980,9 +11982,25 @@ textarea.form-control-lg {
 .centered-hr {
   width: 90%;
   margin: 0 auto;
-  border-top: 1px solid #3f9964;
+  border-top: 2px solid #3f9964;
 }
 
 .home-title {
   margin: 180px auto 83px;
+}
+
+.font-faustina {
+  font-family: "Faustina", serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.text-dark-green {
+  color: #5F725F;
+}
+
+.text-light-green {
+  color: #acc4ae;
 }
