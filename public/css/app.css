@@ -11982,3 +11982,7 @@ textarea.form-control-lg {
   margin: 0 auto;
   border-top: 1px solid #3f9964;
 }
+
+.home-title {
+  margin: 180px auto 83px;
+}

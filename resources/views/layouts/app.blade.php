@@ -26,24 +26,26 @@
     <div id="app">
         <nav class="navbar navbar-expand-md">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ strtolower(Auth::user()->name) }}
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                @if (Auth::check())
+                    <a class="navbar-brand" href="{{ url('/') }}">
+                        {{ strtolower(Auth::user()->name) }}
+                    </a>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ui/ux</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">other works</a>
-                        </li>
-                    </ul>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Left Side Of Navbar -->
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ui/ux</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">other works</a>
+                            </li>
+                        </ul>
+                @endif
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
@@ -69,7 +71,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">about</a>
                             </li>
-                            <!-- <li class="nav-item dropdown">
+                            <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
@@ -87,7 +89,7 @@
                                         @csrf
                                     </form>
                                 </div>
-                            </li> -->
+                            </li>
                         @endguest
                     </ul>
                 </div>
