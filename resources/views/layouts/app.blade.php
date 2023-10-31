@@ -23,7 +23,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div id="app font-poppins">
+    <div id="app">
         <nav class="navbar navbar-expand-md font-faustina">
             <div class="container">
                 @if (Auth::check())

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container font-poppins">
     <div class="row justify-content-center">
         <div class="col-md-9">
             <div class="row home-title font-faustina">
@@ -21,16 +21,17 @@
             </div>
             <div class="row">
                 <div class="col-5">
-                    <div class="row justify-content-center d-grid gap-3 d-md-flex ms-2 me-2">
+                    <div class="row justify-content-center d-grid gap-3 d-md-flex ms-1 me-1">
                         <button class="btn col bg-success bg-opacity-10 border border-success border-opacity-10 rounded-2">ui/ux showcase</button>
                         <button class="btn col bg-success bg-opacity-10 border border-success border-opacity-10 rounded-2">design process</button>
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-
-            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center section-margin">
+        <div class="col">
+            <h1 class="display-5">Warehouse Management System</h1>
         </div>
     </div>
 </div>

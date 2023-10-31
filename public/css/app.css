@@ -12004,3 +12004,7 @@ textarea.form-control-lg {
 .text-light-green {
   color: #acc4ae;
 }
+
+.section-margin {
+  margin: 180px auto 83px;
+}
