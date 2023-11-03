@@ -22,8 +22,8 @@
             <div class="row">
                 <div class="col-4">
                     <div class="row justify-content-center d-grid gap-3 d-md-flex ms-1 me-1">
-                        <button class="btn col bg-light-green border border-success border-opacity-10 rounded-2">ui/ux showcase</button>
-                        <button class="btn col bg-light-green border border-success border-opacity-10 rounded-2">design process</button>
+                        <button class="btn col bg-light-green-button border border-success border-opacity-10 rounded-2">ui/ux showcase</button>
+                        <button class="btn col bg-light-green-button border border-success border-opacity-10 rounded-2">design process</button>
                     </div>
                 </div>
             </div>
@@ -112,22 +112,74 @@
                     <hr>
                 </div>
             </div>
-            <div class="row mt-6">
+            
+            <div class="row mt-6" id="gathering-requirements">
                 <div class="col-2 text-end me-5">
-                    <h1 class="display-1 font-londrina-outline fw-bold">1</h1>
+                    <h1 class="display-1 font-londrina-outline fw-bold text-green">1</h1>
                 </div>
-                <div class="col-8">
-                    <h5 class="fs-3 font-faustina fw-bold">Gathering requirements</h5>
+                <div class="col-9">
+                    <h5 class="fs-3 font-faustina fw-bold text-green">Gathering requirements</h5>
                     <span>Every project has a unique goal to achieve. Understanding the needs of the project gives me the direction for a satisfying design.</span>
                     <div class="row mt-3">
                         <div class="col">
-                            <button class="btn col-2 bg-dark-green bg-opacity-10 text-light-grey fw-light border border-success border-opacity-10 rounded-4">See details</button>
+                            <div class="accordion">
+                                <div class="accordion-item border-0">
+                                    <button class="btn col-2 bg-dark-green-button bg-opacity-10 text-light-grey fw-light rounded-5" type="button" data-bs-toggle="collapse" data-bs-target="#gatheringRequirementAccordion" >See details</button>
+                                    <div id="gatheringRequirementAccordion" class="accordion-collapse collapse">
+                                        <div class="accordion-body bg-light-green mt-3 rounded-3">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="row">
+                                                        <div class="col-1">
+                                                            <i class="fa fa-asterisk me-3" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <span>I collaborate with the project manager to gather information on the project and align on my timeline and tasks.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row">
+                                                        <div class="col-1">
+                                                            <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <span>I research user behaviour by understanding their challenges, pain points, and motivations.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="row">
+                                                        <div class="col-1">
+                                                            <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <span>I communicate with the client to identify business requirements and their preconceived expectations on the projects.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row">
+                                                        <div class="col-1">
+                                                            <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <span>I work closely with developers to discuss technical constraints and come up with creative solutions together.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-4" id="designing">
                 <div class="col-2 text-end me-5">
                     <h1 class="display-1 font-londrina-outline fw-bold">2</h1>
                 </div>
@@ -136,12 +188,44 @@
                     <span>Good design balances functionality, user experience, and aesthetics. It should be user friendly, works well, and looks good!</span>
                     <div class="row mt-3">
                         <div class="col">
-                            <button class="btn col-2 bg-dark-green bg-opacity-10 text-light-grey fw-light border border-success border-opacity-10 rounded-4">See details</button>
+                        <div class="accordion">
+                                <div class="accordion-item border-0">
+                                    <button class="btn col-2 bg-dark-green-button bg-opacity-10 text-light-grey fw-light border border-success border-opacity-10 rounded-5" type="button" data-bs-toggle="collapse" data-bs-target="#designingAccordion">See details</button>
+                                    <div id="designingAccordion" class="accordion-collapse collapse">
+                                        <div class="accordion-body mt-3">
+                                            <div class="row">
+                                                <div class="col bg-light-blue rounded-3 me-3">
+                                                    <div class="row">
+                                                        <span class="fs-5 font-faustina fw-bold">Creating user interfaces</span>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <span>The user interface begins as low-fidelity wireframes; rough drawings of screens layouts and user flows. This allows me to test out different design variations quickly and decide how someone will use the system early on.</span>
+                                                        </div>
+                                                        <div class="col">
+                                                            <span>I convert all the drawings into high-fidelity screens using Adobe XD (or any UI design software). This is where the user interface gets fleshed out with pretty colors, fonts, and design, while considering the readability of each screen and the overall visual tone.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col bg-light-blue rounded-3">
+                                                    <div class="row">
+                                                        <span class="fs-5 font-faustina fw-bold">Creating prototypes</span>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p>With all the designed screens, I link up dynamic elements with appropriate screens using click or hover actions.</p>
+                                                        <p>This creates a prototype (or more!) which simulates the journey a user which simulates the journey a user can take. I run the prototype  to double check all the use cases and identify any friction in user interaction.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-4" id="reviewing">
                 <div class="col-2 text-end me-5">
                     <h1 class="display-1 font-londrina-outline fw-bold">3</h1>
                 </div>
@@ -150,7 +234,43 @@
                     <span>Review and iteration is critical to user-critical design, It is an important step that allows me to continuously improve my designs.</span>
                     <div class="row mt-3">
                         <div class="col">
-                            <button class="btn col-2 bg-dark-green bg-opacity-10 text-light-grey fw-light border border-success border-opacity-10 rounded-4">See details</button>
+                        <div class="accordion">
+                                <div class="accordion-item border-0">
+                                    <button class="btn col-2 bg-dark-green-button bg-opacity-10 text-light-grey fw-light border border-success border-opacity-10 rounded-5" type="button" data-bs-toggle="collapse" data-bs-target="#reviewingAccordion">See details</button>
+                                    <div id="reviewingAccordion" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                                        <div class="accordion-body bg-light-pink mt-3 rounded-3">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="row">
+                                                        <div class="col-1">
+                                                            <i class="fa fa-asterisk me-3" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <span>I present screens and prototypes to my project manager and clients so they can visualize how the final result would look and function. This is how I explain my design vision and manage stakeholder expectations.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row">
+                                                        <div class="col-1">
+                                                            <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <span>I also present to the developers to check the technical feasibility of my designs. This ensures the design can be implemented as per specifications and the project can progress smoothly with minimal interruptions.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row justify-content-center text-center">
+                                                <div class="col-11">
+                                                    <span>These stakeholders give crucial feedback that I take into account to improve the user experience and correct functional gaps in the next iteration of my product.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -197,6 +317,5 @@
         slider.addEventListener('mouseup', end);
         slider.addEventListener('touchend', end);
     })();
-
 </script>
 @endsection

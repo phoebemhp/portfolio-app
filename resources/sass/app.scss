@@ -43,6 +43,18 @@ $margin: 20px;
     color: #ACC5B5;
 }
 
+#gathering-requirements .text-green {
+	color: #089200;
+}
+
+#designing .text-blue {
+	color: #0069A7
+}
+
+#reviewing .text-pink {
+	color: #C834B7
+}
+
 .text-light-grey {
     color: #c6c5c5;
 }
@@ -55,20 +67,32 @@ $margin: 20px;
     margin-top: 4rem;
 }
 
-.bg-dark-green {
+.bg-dark-green-button {
     background-color: #5F725F;
 }
 
-.bg-dark-green:hover {
+.bg-dark-green-button:hover {
     background-color: #d1d1d1;
 }
 
-.bg-light-green {
+.bg-light-green-button {
     background-color: #E2EFEB;
 }
 
-.bg-light-green:hover {
+.bg-light-green-button:hover {
     background-color: #e2e9e7;
+}
+
+.bg-light-green {
+	background-color: #EBFCEA;
+}
+
+.bg-light-blue {
+	background-color: #eaf9fc;
+}
+
+.bg-light-pink {
+	background-color: #fceafa;
 }
 
 .wrapper {
