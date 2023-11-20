@@ -22,8 +22,35 @@
             <div class="row">
                 <div class="col-4">
                     <div class="row justify-content-center d-grid gap-3 d-md-flex ms-1 me-1">
-                        <button class="btn col bg-light-green-button border border-success border-opacity-10 rounded-2">ui/ux showcase</button>
-                        <button class="btn col bg-light-green-button border border-success border-opacity-10 rounded-2">design process</button>
+                        <a href="#dailyUI" class="btn col bg-light-green-button border border-success border-opacity-10 rounded-2">ui/ux showcase</a>
+                        <a href="#designProcess" class="btn col bg-light-green-button border border-success border-opacity-10 rounded-2">design process</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center section-margin" id="dailyUI">
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-6 me-4">
+                    <h1 class="display-6 fw-normal">Daily UI Challenge</h1>
+                    <p class="fs-5 fw-light">Everyday I design a different UI component/screen. <br> Through this challenge I experiment with different styles.</p>
+                    <a class="btn col bg-light-green-button border border-success border-opacity-10 rounded-5">See more in Behance!</a>
+                </div>
+                <div class="col">
+                    <div class="wrapper">
+                        <ul class="items">
+                            <li class="item">0</li>
+                            <li class="item">1</li>
+                            <li class="item">2</li>
+                            <li class="item">3</li>
+                            <li class="item">4</li>
+                            <li class="item">5</li>
+                            <li class="item">6</li>
+                            <li class="item">7</li>
+                            <li class="item">8</li>
+                            <li class="item">9</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -55,16 +82,7 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center section-margin">
-        <div class="col-md-9">
-            <div class="row">
-                <div class="col-6">
-                    <h1 class="display-6 fw-normal">Daily UI Challenge</h1>
-                    <p class="fs-5 fw-light">Everyday I design a different UI component/screen. <br> Through this challenge I experiment with different styles.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <div class="row justify-content-center section-margin">
         <div class="col-md-9">
             <div class="row">
@@ -102,7 +120,7 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center section-margin">
+    <div class="row justify-content-center section-margin" id="designProcess">
         <div class="col-md-9">
             <div class="row">
                 <div class="col-3">
@@ -115,10 +133,10 @@
             
             <div class="row mt-6" id="gathering-requirements">
                 <div class="col-2 text-end me-5">
-                    <h1 class="display-1 font-londrina-outline fw-bold text-green">1</h1>
+                    <h1 class="display-1 font-londrina-outline fw-bold" id="gatheringRequirementNumber">1</h1>
                 </div>
                 <div class="col-9">
-                    <h5 class="fs-3 font-faustina fw-bold text-green">Gathering requirements</h5>
+                    <h5 class="fs-3 font-faustina fw-bold" id="gatheringRequirementTitle">Gathering requirements</h5>
                     <span>Every project has a unique goal to achieve. Understanding the needs of the project gives me the direction for a satisfying design.</span>
                     <div class="row mt-3">
                         <div class="col">
@@ -181,10 +199,10 @@
             </div>
             <div class="row mt-4" id="designing">
                 <div class="col-2 text-end me-5">
-                    <h1 class="display-1 font-londrina-outline fw-bold">2</h1>
+                    <h1 class="display-1 font-londrina-outline fw-bold" id="designingNumber">2</h1>
                 </div>
-                <div class="col-8">
-                    <h5 class="fs-3 font-faustina fw-bold">Designing</h5>
+                <div class="col-9">
+                    <h5 class="fs-3 font-faustina fw-bold" id="designingTitle">Designing</h5>
                     <span>Good design balances functionality, user experience, and aesthetics. It should be user friendly, works well, and looks good!</span>
                     <div class="row mt-3">
                         <div class="col">
@@ -227,10 +245,10 @@
             </div>
             <div class="row mt-4" id="reviewing">
                 <div class="col-2 text-end me-5">
-                    <h1 class="display-1 font-londrina-outline fw-bold">3</h1>
+                    <h1 class="display-1 font-londrina-outline fw-bold" id="reviewingNumber">3</h1>
                 </div>
-                <div class="col-8">
-                    <h5 class="fs-3 font-faustina fw-bold">Reviewing</h5>
+                <div class="col-9">
+                    <h5 class="fs-3 font-faustina fw-bold" id="reviewingTitle">Reviewing</h5>
                     <span>Review and iteration is critical to user-critical design, It is an important step that allows me to continuously improve my designs.</span>
                     <div class="row mt-3">
                         <div class="col">
@@ -317,5 +335,53 @@
         slider.addEventListener('mouseup', end);
         slider.addEventListener('touchend', end);
     })();
+
+    const gatheringRequirementAccordion = document.getElementById('gatheringRequirementAccordion');
+    
+    function handleGatherRequirementsAccordionStateChange() {
+        const gatheringRequirementTitle = document.getElementById('gatheringRequirementTitle');
+        const gatheringRequirementNumber = document.getElementById('gatheringRequirementNumber');
+        if (gatheringRequirementAccordion.classList.contains('show')) {
+            gatheringRequirementTitle.classList.remove('text-green');
+            gatheringRequirementNumber.classList.remove('text-green');
+        } else {
+            gatheringRequirementTitle.classList.add('text-green');
+            gatheringRequirementNumber.classList.add('text-green');
+        }
+    }
+    gatheringRequirementAccordion.addEventListener('show.bs.collapse', handleGatherRequirementsAccordionStateChange);
+    gatheringRequirementAccordion.addEventListener('hide.bs.collapse', handleGatherRequirementsAccordionStateChange);
+
+    const designingAccordion = document.getElementById('designingAccordion');
+    
+    function handleDesigningAccordionStateChange() {
+        const designingTitle = document.getElementById('designingTitle');
+        const designingNumber = document.getElementById('designingNumber');
+        if (designingAccordion.classList.contains('show')) {
+            designingTitle.classList.remove('text-blue');
+            designingNumber.classList.remove('text-blue');
+        } else {
+            designingTitle.classList.add('text-blue');
+            designingNumber.classList.add('text-blue');
+        }
+    }
+    designingAccordion.addEventListener('show.bs.collapse', handleDesigningAccordionStateChange);
+    designingAccordion.addEventListener('hide.bs.collapse', handleDesigningAccordionStateChange);
+
+    const reviewingAccordion = document.getElementById('reviewingAccordion');
+    
+    function handleAccordionStateChange() {
+        const reviewingTitle = document.getElementById('reviewingTitle');
+        const reviewingNumber = document.getElementById('reviewingNumber');
+        if (reviewingAccordion.classList.contains('show')) {
+            reviewingTitle.classList.remove('text-pink');
+            reviewingNumber.classList.remove('text-pink');
+        } else {
+            reviewingTitle.classList.add('text-pink');
+            reviewingNumber.classList.add('text-pink');
+        }
+    }
+    reviewingAccordion.addEventListener('show.bs.collapse', handleAccordionStateChange);
+    reviewingAccordion.addEventListener('hide.bs.collapse', handleAccordionStateChange);
 </script>
 @endsection

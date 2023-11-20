@@ -95,6 +95,23 @@ $margin: 20px;
 	background-color: #fceafa;
 }
 
+.bg-linkedin-button {
+	background-color: #0066C8;
+}
+
+.bg-linkedin-button:hover {
+	background-color: #809eba;
+}
+
+.bg-dribble-button {
+	background-color: #EA4C89;
+}
+
+.bg-dribble-button:hover {
+	background-color: #e9a8c1;
+}
+
+// Draggable slide
 .wrapper {
 	position: relative;
 	
@@ -177,4 +194,13 @@ $margin: 20px;
 	.item {
 		width: 20%;	
 	}
+}
+// End of Draggable Slide
+
+.fs-small {
+	font-size: small;
+}
+
+.about-margin {
+    margin: 110px auto;
 }
