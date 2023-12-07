@@ -28,4 +28,16 @@ class HomeController extends Controller
         $user = User::find(Auth::id());
         return view('home', compact('user'));
     }
+
+    public function about()
+    {
+        $user = User::find(Auth::id());
+        return view('about', compact('user'));
+    }
+
+    public function resume()
+    {
+        $user = User::find(Auth::id());
+        return view('resume', compact('user'));
+    }
 }

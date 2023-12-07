@@ -12154,3 +12154,9 @@ textarea.form-control-lg {
 .about-margin {
   margin: 110px auto;
 }
+
+.circle-profile-image {
+  border-radius: 50%;
+  width: 60%;
+  height: 80%;
+}

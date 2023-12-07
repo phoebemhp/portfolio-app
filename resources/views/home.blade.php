@@ -7,8 +7,10 @@
             <div class="row home-title font-faustina">
                 <div class="col d-flex align-items-center p-0">
                     <span class="display-4 me-3">{{ Auth::user()->name }}</span>
-                    <i class="fa fa-circle fa-md me-3 text-dark-green" aria-hidden="true"></i>
-                    <span class="display-4 text-dark-green">UI/UX</span>
+                    @if ($user->profile && $user->profile->occupation)
+                        <i class="fa fa-circle fa-md me-3 text-dark-green" aria-hidden="true"></i>
+                        <span class="display-4 text-dark-green">{{ $user->profile->occupation }}</span>
+                    @endif
                 </div>
             </div>
             <div class="row">
